@@ -86,7 +86,7 @@ enyo.kind({
 			  style: "color: black; line-height: 28px;",
 			  components:[{name: "pinInstruction", content: ""}]},
 			 {name: "pinPadErrMsg", content: "",
-			  style: "text-align: center; margin-top: 10px;color: red;"},
+			  style: "text-align: center; margin-top: 10px; color: red;"},
 			 {name: "digits", content: "", value: "", allowHtml: true,
 			  style: "height: 24px; text-align: center; margin-top: 10px; color: black;"},
 			 {kind: "PINNumberPad", onKeyTapped: "pinKeyTapped"},

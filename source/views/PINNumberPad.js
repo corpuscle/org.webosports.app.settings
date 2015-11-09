@@ -7,7 +7,7 @@ enyo.kind({
 	},
 	defaultKind: enyo.kind({kind: "onyx.Button",
 				classes: "onyx-toolbar, onyx-light",
-				style: "width: 33.3%; height: 25%; font-size: 32pt; font-weight: bold;",
+				style: "width: 33.3%; height: 25%; font-size: 24pt; font-weight: bold;",
 				ontap: "keyTapped"}),
 	components:[
 		{content: "1", style: "border-radius: 16px 0 0 0;"},
