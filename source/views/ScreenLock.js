@@ -51,11 +51,12 @@ enyo.kind({
 			  components: [{name: "setPwd2", kind: "onyx.Input", type: "password",
 			                style: "width: 99%;",
 			                placeholder: $L("Confirm password")}]},
-			 {kind: "onyx.Button", content: $L("Done"), classes: "onyx-affirmative",
-			  style: "width: 100%; margin-top: 10px;", ontap: "pwdSetterDoneTapped"},
-			 {kind: "onyx.Button", content: $L("Cancel"),
-			  style: "width: 100%; margin-top: 10px;",
-			  ontap: "pwdSetterCancelTapped"}
+		 	 {style: "text-align: center",
+			  components: [{kind: "onyx.Button", content: $L("Done"), classes: "onyx-affirmative",
+					style: "margin-top: 10px; margin-right: 10px", ontap: "pwdSetterDoneTapped"},
+				       {kind: "onyx.Button", content: $L("Cancel"),
+					style: "margin-top: 10px;", ontap: "pwdSetterCancelTapped"}]
+			 }
 		 ]},
 		{name: "LockPasswordChecker", kind: "enyo.ModalDialog", classes: "onyx-light",
 		 layoutKind: "FittableRowsLayout",
@@ -70,11 +71,12 @@ enyo.kind({
 			  components: [{name: "checkPwd", kind: "onyx.Input", type: "password",
 			                style: "width: 99%;",
 			                placeholder: $L("Enter password")}]},
-			 {kind: "onyx.Button", content: $L("Done"), classes: "onyx-affirmative",
-			  style: "width: 100%; margin-top: 10px;", ontap: "pwdCheckerDoneTapped"},
-			 {kind: "onyx.Button", content: $L("Cancel"),
-			  style: "width: 100%; margin-top: 10px;",
-			  ontap: "pwdCheckerCancelTapped"}
+		 	 {style: "text-align: center",
+			  components: [{kind: "onyx.Button", content: $L("Done"), classes: "onyx-affirmative",
+					style: "margin-top: 10px; margin-right: 10px", ontap: "pwdCheckerDoneTapped"},
+				       {kind: "onyx.Button", content: $L("Cancel"),
+					style: "margin-top: 10px;", ontap: "pwdCheckerCancelTapped"}]
+			 }
 		 ]},
 		{name: "PINPad", kind: "enyo.ModalDialog", classes: "onyx-light",
 		 layoutKind: "FittableRowsLayout",
@@ -88,11 +90,12 @@ enyo.kind({
 			 {name: "digits", content: "", value: "", allowHtml: true,
 			  style: "height: 24px; text-align: center; margin-top: 10px; color: black;"},
 			 {kind: "PINNumberPad", onKeyTapped: "pinKeyTapped"},
-			 {kind: "onyx.Button", content: $L("Cancel"),
-			  style: "width: 100%; margin-top: 10px;",
-			  ontap: "pinPadCancelTapped"},
-			 {kind: "onyx.Button", content: $L("Done"), classes: "onyx-affirmative",
-			  style: "width: 100%; margin-top: 10px;", ontap: "pinPadDoneTapped"}
+			 {style: "text-align: center",
+			  components: [{kind: "onyx.Button", content: $L("Done"), classes: "onyx-affirmative",
+					style: "margin-top: 10px; margin-right: 10px", ontap: "pinPadDoneTapped"},
+				       {kind: "onyx.Button", content: $L("Cancel"),
+					style: "margin-top: 10px", ontap: "pinPadCancelTapped"}]
+			 }
 		 ]},
 		{kind: "Scroller",
 		touch: true,
