@@ -1,12 +1,12 @@
 enyo.depends(
 	"WiFi.js",
+	"Bluetooth.js",
 	"Telephony.js",
 	"SystemUpdates.js",
 	"SystemUpdates.css",
 	"Sound.js",
 	"PINNumberPad.js",
 	"ScreenLock.js",
-	"pickRingTones.js",
 	"Licenses.js",
 	"LanguageInput.js",
 	"DevOptions.js",
